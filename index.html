@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<style>
+  .container-fluid{
+    background-color: rgb(67, 149, 167);
+  }
+  .hero{
+    
+      background-image:url('cloud.jpg');
+      color: black;
+      padding: 100px 20px;
+      text-align: center;
+  }
+  .hero img{
+    margin-top: -40px;
+    width: 400px;
+    height: 200px; 
+    margin-bottom: 30px;
+  }
+  .hero p {
+      font-size: 24px;
+      margin-bottom: 50px;
+      font-family: 'Courier New', Courier, monospace;
+      
+    }
+    .cta-button {
+      background-color: #42473f;
+      color: #fff;
+      padding: 15px 30px;
+      border-radius: 5px;
+      text-decoration: none;
+      font-weight: 600;
+      transition: background-color 0.3s;
+    }
+
+    .cta-button:hover {
+      background-color: #555;
+    }
+    footer {
+      background-color: #333;
+      color: #fff;
+      padding: 20px;
+      text-align: center;
+      
+    }
+
+    footer p {
+      margin: 0.10;
+      font-size:medium;
+    }
+    body {
+    font-family: Arial, sans-serif;
+    
+}
+
+.social-icons {
+    display: flex;
+    justify-content: center; 
+    margin-top: 20px;
+}
+
+.icon {
+    text-decoration: none; 
+    color: #fff; 
+    background-color: #333; 
+    border-radius: 50%; 
+    padding: 10px; 
+    margin: 0 10px; 
+    transition: background-color 0.3s; 
+}
+
+.icon:hover {
+    background-color: #555; 
+}
+.footer .btn.btn-social {
+    margin-right: 5px;
+    width: 35px;
+    height: 35px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--light);
+    border: 1px solid #FFFFFF;
+    border-radius: 35px;
+    transition: .3s;
+}
+
+.footer .btn.btn-social:hover {
+    color: var(--primary);
+}
+
+.footer .btn.btn-link {
+    display: block;
+    margin-bottom: 5px;
+    padding: 0;
+    text-align: left;
+    color: #FFFFFF;
+    font-size: 15px;
+    font-weight: normal;
+    text-transform: capitalize;
+    transition: .3s;
+}
+
+.footer .btn.btn-link::before {
+    position: relative;
+    content: "\f105";
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    margin-right: 10px;
+}
+
+.footer .btn.btn-link:hover {
+    letter-spacing: 1px;
+    box-shadow: none;
+}
+
+.footer .copyright {
+    padding: 25px 0;
+    font-size: 15px;
+    border-top: 1px solid rgba(256, 256, 256, .1);
+}
+
+.footer .copyright a {
+    color: var(--light);
+}
+
+.footer .footer-menu a {
+    margin-right: 15px;
+    padding-right: 15px;
+    border-right: 1px solid rgba(255, 255, 255, .1);
+}
+
+.footer .footer-menu a:last-child {
+    margin-right: 0;
+    padding-right: 0;
+    border-right: none;
+}
+
+
+
+</style>
+<header>
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">Cloud Nine Cafe</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="contact.html">Order Online</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Shop</a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="menu.html">Chai & Cocoa</a></li>
+                  <li><a class="dropdown-item" href="menu.html">Herbs & spices</a></li>
+                  <li><hr class="dropdown-divider"></li>
+                  <li><a class="dropdown-item" href="menu.html">Orders</a></li>
+                </ul>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Cafe
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="menu.html">New Delhi Cafe</a></li>
+                  <li><a class="dropdown-item" href="#">Ahemdabad cafe ~ Coming Soon</a></li>
+                  <li><hr class="dropdown-divider"></li>
+                  <li><a class="dropdown-item" href="menu.html">Cafe Menu</a></li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                
+              </li>
+            </ul>
+            <form class="d-flex" role="search">
+              <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+              <button class="btn btn-outline-success" type="submit">Search</button>
+            </form>
+          </div>
+        </div>
+      </nav>
+</header>
+<body>
+  <main>
+    <div class="hero" >
+      <img src="verbix.png" >
+      <b>
+      <p>From Bean to Bliss</p>
+      </b>
+      <a href="menu.html" class="cta-button">Menu</a>
+      
+    </div>
+
+    <div class="container-xxl py-5">
+      <div class="container">
+          <div class="row g-5 align-items-center">
+              <div class="col-lg-6">
+                  <div class="row g-3">
+                      <div class="col-6 text-start">
+                         <a href="menu.html"><img class="img-fluid rounded w-100 wow zoomIn" data-wow-delay="0.1s" src="atmosphere.jpg"></a> 
+                      </div>
+                      <div class="col-6 text-start">
+                        <a href="menu.html"><img class="img-fluid rounded w-75 wow zoomIn" data-wow-delay="0.3s" src="atmosphere1.png" style="margin-top: 25%;"></a>  
+                      </div>
+                      <div class="col-6 text-end">
+                        <a href="menu.html"> <img class="img-fluid rounded w-75 wow zoomIn" data-wow-delay="0.5s" src="atmosphere2.jpg"></a>  
+                      </div>
+                      <div class="col-6 text-end">
+                        <a href="menu.html"><img class="img-fluid rounded w-100 wow zoomIn" data-wow-delay="0.7s" src="atmosphere3.jpg"></a>  
+                      </div>
+                  </div>
+              </div>
+              <div class="col-lg-6">
+                  <h5 class="section-title ff-secondary text-start text-primary fw-normal">About Us</h5><hr>
+                  <h1 class="mb-4">Welcome to <i class="fa fa-utensils text-primary me-2"></i>Cloud Nine</h1>
+                  <p class="mb-4">Cloudnine Cafe, often recognized for its vibrant atmosphere and unique offerings, typically has a rich history rooted in community and culture. While specific details can vary by location, many cafes like Cloudnine often start as small, family-owned businesses, aiming to create a welcoming space for locals.</p>
+                  <p class="mb-4">The cafe might have evolved over the years, expanding its menu to include a variety of beverages, snacks, and meals, reflecting local tastes and trends. Many cafes also emphasize sustainability and sourcing ingredients locally, contributing to their community's economy.</p>
+                  <div class="row g-4 mb-4">
+                      <div class="col-sm-6">
+                          <div class="d-flex align-items-center border-start border-5 border-primary px-3">
+                              <h1 class="flex-shrink-0 display-5 text-primary mb-0" data-toggle="counter-up">25</h1>
+                              <div class="ps-4">
+                                  <p class="mb-0">Years of</p>
+                                  <h6 class="text-uppercase mb-0">Experience</h6>
+                              </div>
+                          </div>
+                      </div>
+                      <div class="col-sm-6">
+                          <div class="d-flex align-items-center border-start border-5 border-primary px-3">
+                              <h1 class="flex-shrink-0 display-5 text-primary mb-0" data-toggle="counter-up">10</h1>
+                              <div class="ps-4">
+                                  <p class="mb-0">Popular</p>
+                                  <h6 class="text-uppercase mb-0">Master Chefs</h6>
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+                  <a class="btn btn-primary py-3 px-5 mt-2" href="contact.html">Order Online</a>
+              </div>
+          </div>
+      </div>
+  </div>
+
+  
+  
+  </main>  
+
+  <footer>
+    <p>LIKE, SHARE, REPEAT</p>
+    <div class="text">
+     <p style="font-family:fantasy; font-size: larger; font-size: xx-large;"> Connect with us ! </p>
+    </div>
+
+    <div class="social-icons">
+      <a href="https://www.facebook.com" target="_blank" class="icon facebook" ><i class="fab fa-facebook-f"></i></a>
+      <a href="https://www.twitter.com" target="_blank" class="icon twitter"><i class="fab fa-twitter"></i></a>
+      <a href="https://www.instagram.com" target="_blank" class="icon instagram"><i class="fab fa-instagram"></i></a>
+      <a href="https://www.pinterest.com" target="_blank" class="icon pinterest"><i class="fab fa-pinterest"></i></a>
+  </div>
+  
+  <div class="container-fluid bg-dark text-light footer pt-5 mt-5 wow fadeIn" data-wow-delay="0.1s">
+    <div class="container py-5">
+        <div class="row g-5">
+            <div class="col-lg-3 col-md-6">
+                <h4 class="section-title ff-secondary text-start text-primary fw-normal mb-4">Quick Links</h4>
+                <a class="btn btn-link" href="index.html">About Us</a>
+                <a class="btn btn-link" href="contact.html">Contact Us</a>
+                <a class="btn btn-link" href="contact.html">Reservation</a>
+                <a class="btn btn-link" href="index.html">Terms & Condition</a>
+            </div>
+            <div class="col-lg-3 col-md-6">
+                <h4 class="section-title ff-secondary text-start text-primary fw-normal mb-4">Contact</h4>
+                <p class="mb-2"><i class="fa fa-map-marker-alt me-3"></i>Champa Gali, Westend Marg,
+                  Saket, New Delhi</p>
+                <p class="mb-2"><i class="fa fa-phone-alt me-3"></i>+9172 345 67890</p>
+                <p class="mb-2"><i class="fa fa-envelope me-3"></i>cloudnine@gmail.com</p>
+                
+            </div>
+            <div class="col-lg-3 col-md-6">
+                <h4 class="section-title ff-secondary text-start text-primary fw-normal mb-4" >Opening</h4>
+                <h5 class="text-light fw-normal">Monday - Saturday</h5>
+                <p>09AM - 09PM</p>
+                <h5 class="text-light fw-normal">Sunday</h5>
+                <p>10AM - 08PM</p>
+            </div>
+            <div class="col-lg-3 col-md-6">
+                <h4 class="section-title ff-secondary text-start text-primary fw-normal mb-4">Newsletter</h4>
+                <p>SignUp to our newsletter to get 10% off on your first order.</p>
+                
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="copyright">
+            <div class="row">
+                <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
+                    &copy; <a class="border-bottom" href="index.html">Cloud Nine Cafe</a>, All Right Reserved. 
+                </div>
+                
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+  </footer>
+    
+</body>
+</html>
